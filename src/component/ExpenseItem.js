@@ -1,12 +1,13 @@
-//import { startTransition } from "react";
+
+import './ExpenseItem.css'
 
 function ExpenseItem() {
   return (
-    <div>
+    <div className='expense-item'>
         <div>October 10, 2022</div>
-        <div>
+        <div className='expense-item__description'>
             <h2>Car Insurance</h2>
-            <div>$456.78</div>
+            <div className='expense-item__price'>$456.78</div>
         </div>
     </div>
   );
