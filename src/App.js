@@ -1,6 +1,7 @@
 //import "./App.css";
 //import ExpenseItem from "./component/ExpenseItem";
 import Expenses from "./component/Expenses/Expenses";
+import NewExpense from "./component/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -33,10 +34,10 @@ const App = () => {
   return (
     <div className="App">
       <h1>Let's get started for sure sure!</h1>
-      <Expenses items = {expenses}/>
-
+      <NewExpense />
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
