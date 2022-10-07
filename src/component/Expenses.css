@@ -5,3 +5,9 @@
     width: 50rem;
     
 }
+
+@media (max-width: 780px) {
+.expenses{
+    width: -webkit-fill-available;
+}    
+}
