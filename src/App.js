@@ -2,7 +2,7 @@
 //import ExpenseItem from "./component/ExpenseItem";
 import Expenses from "./component/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
