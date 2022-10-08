@@ -54,7 +54,7 @@ const ExpenseForm = (props) => {
 
     //sending the expense data to the parent on form submit.
     props.onSaveExpenseData(expenseData);
-    
+
     //To clear the form inputs after submission
     setEnteredTitle("");
     setEnteredAmount("");
