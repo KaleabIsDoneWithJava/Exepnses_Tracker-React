@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -51,8 +51,11 @@ const ExpenseForm = () => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
-    //To cleare the form inputs after submission
+
+    //sending the expense data to the parent on form submit.
+    props.onSaveExpenseData(expenseData);
+    
+    //To clear the form inputs after submission
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
