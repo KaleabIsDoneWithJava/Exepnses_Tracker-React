@@ -32,7 +32,7 @@ const App = () => {
   ];
 
   const addExpenseHandler = (expenseData) => {
-    console.log("IN APP.JS");
+    console.log("In App.js");
     console.log(expenseData);
   };
   return (
