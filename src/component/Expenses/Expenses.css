@@ -5,7 +5,9 @@
     width: 50rem;
     
 }
-
+p{
+    color:#a892ee;
+}
 @media (max-width: 800px) {
 .expenses{
     width: -webkit-fill-available;
